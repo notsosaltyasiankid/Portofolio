@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #33251B; /* Dark Brown */
+  color: #fff;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #52453C; /* Medium Brown */
+}
+
+.SelfPhoto{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px ;
+}
+
+.projects-btn {
+  padding: 10px;
+  border: none;
+  background-color: #857B73; /* Grayish Brown */
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.projects-btn:hover {
+  background-color: #52453C; /* Medium Brown */
+}
+
+/* Sections */
+section {
+  padding: 30px;
+  text-align: center;
+  background-color: #857B73; /* Grayish Brown */
+  color: #33251B;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+/* About Me */
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #52453C; /* Medium Brown */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.about-text {
+  width: 50%;
+  color: #fff;
+}
+
+.about-image img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #857B73; /* Grayish Brown */
+}
+
+/* Divider */
+hr {
+  border: 1px solid #857B73;
+  margin: 30px auto;
+  width: 80%;
+}
+
+/* Projects Section */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-item img {
+  width: 150px;
+  height: 150px;
+  background-color: #52453C; /* Medium Brown */
+  border-radius: 10px;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #33251B; /* Dark Brown */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  border: 2px solid #857B73;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #52453C; /* Medium Brown */
+  color: #fff;
+}
