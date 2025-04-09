@@ -109,6 +109,15 @@ section {
   color: #fff;
 }
 
+.project-text{
+  
+}
+
+.textDecrative a {
+  text-decoration: none;
+  color: black;
+}
+
 .about-image img {
   position: relative;
   top: 0;
