@@ -40,12 +40,22 @@ header {
 
 .Back{
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;  
+  right: 10px;
+  top: 20px;
+  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;  
+  border: none;
+  background-color: #857B73; /* Grayish Brown */
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
 }
+
+.Back:hover{
+  text-decoration: underline;
+  color: #33251B;
+  }
 
 .git-image img {
   width: 80px; /* size of the git image */
@@ -68,11 +78,14 @@ header {
   font-size: 35px;
 }
 
+
 .projects-btn {
   position: absolute;
   right: 20px;
   top: 70px;
-  padding: 10 px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;  
   border: none;
   background-color: #857B73; /* Grayish Brown */
   color: #fff;
@@ -81,8 +94,9 @@ header {
 }
 
 .projects-btn:hover {
-  background-color: black; /* Medium Brown */
-}
+  text-decoration: underline;
+  color: #33251B;
+  }
 
 /* Sections */
 section {
@@ -92,6 +106,8 @@ section {
   color: #33251B;
   border-radius: 10px;
   margin: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* About Me */
@@ -104,18 +120,39 @@ section {
   border-radius: 10px;
 }
 
-.about-text {
+.Aboutme{
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+.text-padding{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.Welkom-text {
   width: 50%;
   color: #fff;
 }
 
 .project-text{
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+
+  height: 100%;
+  padding: 2rem;
+  flex-direction: column;  
 }
 
-.textDecrative a {
-  text-decoration: none;
-  color: black;
+a.textDecrative {
+    text-decoration: none;
+}
+
+.textDecrative:hover{
+    text-decoration: underline;
+    text-decoration-color: #33251B;
 }
 
 .about-image img {
