@@ -35,7 +35,19 @@ header {
   position: absolute; /* sets position*/
   top: 0;
   right: 0; 
-  padding-right: 100px;
+  padding-right: 120px;
+}
+
+.git-image p{
+  margin-top: -12px;
+  color: white;
+  text-decoration-line: none;
+}
+
+.git-image p:hover{
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
 }
 
 .Back{
@@ -58,19 +70,26 @@ header {
   }
 
 .git-image img {
-  width: 80px; /* size of the git image */
+  width: 80px;
   height: auto;
-  margin: 10px; /* adds space from top and right edges */
+  margin: 10px; 
 }
 
 .GameEngineImage{
   display: flex;
   position: absolute;
   top: 0;
-  right: 200px; 
+  right: 240px; 
   width: 80px;
   height: auto;
   margin: 10px;
+}
+
+.GameEngineText{
+  display: flex;
+  position: absolute;
+  top: 75px;
+  right: 230px;   
 }
 
 .TextProjectTitel{
@@ -108,6 +127,10 @@ section {
   margin: 20px;
   margin-left: 200px;
   margin-right: 200px;
+}
+
+.Project-Title{
+  color: #33251B;
 }
 
 /* About Me */
@@ -174,9 +197,12 @@ hr {
 
 /* Projects Section */
 .projects-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr); /* 4 columns */
   gap: 20px;
+  max-width: 1000px; /* Adjust as needed */
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .project-item img {
@@ -186,8 +212,10 @@ hr {
   border-radius: 10px;
 }
 
-.color{
-  color: 33251B;
+.visualSheet{
+  padding: 50px;
+  width: 850px;
+  height: 500px;
 }
 
 /* Skills Section */
