@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Bons - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img class="SelfPhoto" src="img/HLOunrealEngine.png" alt="Boss fight Image">
+        </div>
+            <div class="welcomeText">
+                <h1><em>Boss fight in Unreal Engine 5!</em></h1>
+            </div>
+            <div class="git-image">
+                <a href="https://github.com/MixmasterX28/VSDarkestDungeon">
+                    <img src="img/github-logo.png" alt="GitHub Link">
+                    <p class="GithubText">link to github</p>
+                </a>
+            </div>
+            <div>
+                <img class="GameEngineImage" src="img/Unreal-Engine.png" alt="Unreal Engine logo">
+                <p class="GameEngineText">Made with UE5!</p>
+            </div>
+            <a href="index.html">
+                <button class="Back">Back</button>
+            </a>
+    </header>
+    <section id="about">
+        <div class="TextProjectTitel">
+            <h1>Boss fight in Unreal Engine 5</h1>
+                <video width="640" height="340" controls src="Video/BossfightRecording.mp4" type="video/mp4" href="Video/TowerDefense.mp4"></video>
+        </div>
+    </section>
+    <section>
+        <h1>The project</h1>
+        <p class="text-padding">This project was made with the intention to get to know how Unreal Engine works. This is my first project that I made with Unreal Engine 5 and also I was with a group full of people that did not know how the engine worked. This is a project that we got from school to make. We used the blueprint system that is build in with the engine that uses C++. The first thing we needed to do is come to an idea for what boss fight we wanted to make. Everyone in the group tossed around ideas and suggestions of all sorts of different mechanics and artstyles. We then voted for the ideas that came forward and chose to do an bossfight in an lost japanse forest where you fight an stone golem and the character that you are playing as is an samurai. </p>
+    </section>
+    <section>
+        <h1>The part I made</h1>
+        <div class="LinkToCode">
+                <a href="https://github.com/L0rdSquidy/BO-baba_yaga/tree/Senna/Add%20again/Assets/Export/Scripts">
+                    <img src="img/github-logo.png" alt="Link to github code">
+                </a>
+            </div>
+        <p class="text-padding">I had the task to make the shuriken throw mechanic to be thrown against the boss. I firstly began to code an shpere tracer into the player so it can understand when it hits an wall when I press a specific button. When that was done I then added a placeholder ball to put in place of the sphere tracer so that the ball would stop if it hits an wall. Then the shuriken mesh was shared with me so I could place it on the place of the placeholder. After that I needed to make a mechanic where if the shuriken was stuck on a movable object (aka the boss) then it would be able to move with it. After a while of coding and other errors I got it to finally work against the boss. I still had some time left so I eventually made some particle effects where if it hits an objects sparks would come out of the shuriken.</p>
+    </section>
+    <hr>
+    <section>
+        <h1>Visual Sheets/Showreels</h1>
+            <img class="visualSheet" src="img/VisualSheetShurikenDetection.png" alt="Visual sheet explainging the code">
+    </section>
+</body>
+</html>

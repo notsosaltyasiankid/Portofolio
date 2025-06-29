@@ -2,7 +2,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #241C16; /* Dark Brown */
+  background-image: url("../img/seamless-basket-weave-texture.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
   color: #fff;
 }
 
@@ -32,7 +35,7 @@ header {
 }
 
 .git-image{
-  position: absolute; /* sets position*/
+  position: absolute;
   top: 0;
   right: 0; 
   padding-right: 120px;
@@ -45,9 +48,8 @@ header {
 }
 
 .git-image p:hover{
-  color: black;
+  color: white;
   text-decoration: underline;
-  text-decoration-color: black;
 }
 
 .Back{
@@ -75,6 +77,22 @@ header {
   margin: 10px; 
 }
 
+.LinkToCode{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  
+}
+
+.LinkToCode img{
+  width: 80px;
+  height: auto;
+}
+
+.LinkToCode p:hover{
+  color: black;
+}
+
 .GameEngineImage{
   display: flex;
   position: absolute;
@@ -97,6 +115,26 @@ header {
   font-size: 35px;
 }
 
+.GameplayPic{
+  width: 890px;
+  height: 450px;
+}
+
+.GameplayPicOther{
+  display: flex;     
+  list-style: none; 
+  padding-top: 20px;
+  padding-right: 40px;
+  margin: 0;
+  gap: 10px;       
+}
+
+.GameplayPicOther img {
+  width: 440px;
+  height: 240px;
+  max-width: 100%;
+  display: block;
+}
 
 .projects-btn {
   position: absolute;
@@ -119,6 +157,7 @@ header {
 
 /* Sections */
 section {
+  position: relative;
   padding: 30px;
   text-align: center;
   background-color: #857B73; /* Grayish Brown */
@@ -163,7 +202,6 @@ section {
   justify-content: center;
   align-items: center;  
   text-align: center;
-
   height: 100%;
   padding: 2rem;
   flex-direction: column;  
@@ -233,10 +271,38 @@ hr {
   border: 2px solid #857B73;
 }
 
+.contact{
+  position: absolute;
+  right: 10px;
+  
+}
+
+.ContactText{
+  font-size: 30px;
+}
+
+.socials{
+  position: absolute;
+  font-size: 30px;
+}
+
+.socialsLogo{
+  width: 60px;
+  height: 60px;
+}
+
+.copyright{
+  position: relative;
+  bottom: -130px;
+}
+
 /* Footer */
 footer {
+  position: relative;
   text-align: center;
   padding: 20px;
+  height: 150px;
   background-color: #33251B; /* Medium Brown */
   color: #fff;
 }
+
