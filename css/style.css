@@ -167,7 +167,12 @@ header {
 .projects-btn:hover {
   text-decoration: underline;
   color: #33251B;
-  }
+}
+
+.CV:hover{
+  text-decoration: underline;
+  color: #33251B;
+}
 
 /* Sections */
 section {
