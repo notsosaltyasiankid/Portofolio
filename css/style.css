@@ -1,4 +1,5 @@
 body {
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -7,13 +8,17 @@ body {
   background-size: cover;
   background-size: 100% 100%;
   color: #fff;
+  visibility: visible;
 }
 
-/* Header */
 header {
+  display: flex;
+  position: relative;
   text-align: center;
+  padding-top: 100px;
   padding: 90px;
-  background-color: #33251B; /* Medium Brown */
+  background-color: #33251B;
+  box-shadow: 3px 3px 5px rgba( 0, 0, 0, 0.1);
 }
 
 .welcomeText{
@@ -60,7 +65,7 @@ header {
   padding-left: 30px;
   padding-right: 30px;  
   border: none;
-  background-color: #857B73; /* Grayish Brown */
+  background-color: #857B73;
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
@@ -174,13 +179,30 @@ header {
   color: #33251B;
 }
 
+nav{
+  visibility: hidden;
+  position: absolute;
+  background-image: url("../img/Backgroundtest2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+
 /* Sections */
 section {
   position: relative;
   padding: 30px;
   text-align: center;
-  background-color: #857B73; /* Grayish Brown */
+  background-color: #857B73;
   color: #33251B;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   margin: 20px;
   margin-left: 200px;
@@ -191,7 +213,6 @@ section {
   color: #33251B;
 }
 
-/* About Me */
 #about {
   display: flex;
   justify-content: space-around;
@@ -242,22 +263,20 @@ a.textDecrative {
   width: 420px;
   height: 640px;
   border-radius: 10px;
-  background-color: #857B73; /* Grayish Brown */
+  background-color: #857B73; 
 }
 
-/* Divider */
 hr {
   border: 1px solid #857B73;
   margin: 30px auto;
   width: 80%;
 }
 
-/* Projects Section */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(4, 2fr); /* 4 columns */
   gap: 20px;
-  max-width: 1000px; /* Adjust as needed */
+  max-width: 1000px;
   margin: 0 auto;
   justify-items: center;
 }
@@ -265,8 +284,23 @@ hr {
 .project-item img {
   width: 150px;
   height: 150px;
-  background-color: #52453C; /* Medium Brown */
+  background-color: #52453C;
   border-radius: 10px;
+}
+
+.MoreProjects{
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px; 
+  border: none;
+  background-color: #33251B; 
+  color: #857B73;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.MoreProjects:hover{
+  text-decoration: underline;
 }
 
 .visualSheet{
@@ -275,7 +309,6 @@ hr {
   height: 500px;
 }
 
-/* Skills Section */
 .skills-container {
   display: flex;
   justify-content: center;
@@ -283,7 +316,7 @@ hr {
 }
 
 .skill-card {
-  background-color: #33251B; /* Dark Brown */
+  background-color: #33251B;
   padding: 20px;
   border-radius: 10px;
   color: #fff;
@@ -316,13 +349,13 @@ hr {
   bottom: -130px;
 }
 
-/* Footer */
 footer {
   position: relative;
   text-align: center;
   padding: 20px;
   height: 150px;
-  background-color: #33251B; /* Medium Brown */
+  background-color: #33251B;
   color: #fff;
+  box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
