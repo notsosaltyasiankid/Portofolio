@@ -8,6 +8,8 @@ body {
   background-size: cover;
   background-size: 100% 100%;
   color: #fff;
+  opacity: 1;
+  transition: 2s all;
   visibility: visible;
 }
 
@@ -17,7 +19,10 @@ header {
   text-align: center;
   padding-top: 100px;
   padding: 90px;
-  background-color: #33251B;
+  background-image: url("../img/HeaderAndFooter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
   box-shadow: 3px 3px 5px rgba( 0, 0, 0, 0.1);
 }
 
@@ -141,6 +146,12 @@ header {
   display: block;
 }
 
+.vpPic{
+  width: 680px;
+  height: 340px;
+  max-width: 100%;
+}
+
 .projects-btn {
   position: absolute;
   right: 20px;
@@ -187,13 +198,13 @@ nav{
   background-size: cover;
   background-size: 100% 100%;
   text-align: center;
+  opacity: 0;
+  transition: 2s all;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
 }
-
-
 
 /* Sections */
 section {
@@ -217,7 +228,10 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #52453C; /* Medium Brown */
+  background-image: url("../img/Introduction.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
   padding: 40px;
   border-radius: 10px;
 }
@@ -275,6 +289,15 @@ hr {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(4, 2fr); /* 4 columns */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.OtherContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
   gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
@@ -354,7 +377,10 @@ footer {
   text-align: center;
   padding: 20px;
   height: 150px;
-  background-color: #33251B;
+  background-image: url("../img/HeaderAndFooter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
   color: #fff;
   box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.1);
 }
