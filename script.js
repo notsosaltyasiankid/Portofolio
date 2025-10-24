@@ -16,3 +16,5 @@ document.querySelector(".projects-btn").addEventListener("click", function()
 {
     document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
 });
+
+<button id="ProjectsButton" class="MoreProjects">More projects</button> 
