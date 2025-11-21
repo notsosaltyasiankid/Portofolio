@@ -236,14 +236,9 @@ section {
   border-radius: 10px;
 }
 
-.Aboutme{
-  padding-left: 500px;
-  padding-right: 500px;
-}
-
 .text-padding{
-  padding-left: 200px;
   padding-right: 200px;
+  padding-left: 200px;
 }
 
 .Welkom-text {
@@ -333,7 +328,7 @@ hr {
   background-color: #33251B;
   padding: 20px;
   border-radius: 10px;
-  color: #fff;
+  color: #ffffff;
   border: 2px solid #857B73;
 }
 
