@@ -400,10 +400,15 @@ footer {
     padding-right: 0;
   }
 
+  /* FIX 1: De secties ombouwen tot flexboxen zodat alles netjes stapelt */
   section {
     margin-left: 10px;
     margin-right: 10px;
     padding: 15px;
+    display: flex;
+    flex-direction: column; /* Zet de <h1> en de afbeeldingen onder elkaar */
+    align-items: center; /* Centreert alles netjes */
+    box-sizing: border-box; /* Zorgt dat de padding niet zorgt voor horizontale scroll */
   }
 
   .text-padding {
@@ -420,13 +425,17 @@ footer {
     width: 100%;
   }
 
+  /* FIX 2: Zorg dat 'video' en de rest schaalbaar worden en hun harde pixels negeren */
+  video, 
   .GameplayPic, 
   .vpPic, 
   .visualSheet, 
   .about-image img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: auto; /* Zorgt dat de aspect ratio klopt */
+    display: block;
+    margin-top: 15px; /* Geeft wat ademruimte tussen je <h1> en je afbeelding/video */
   }
 
   .GameplayPicOther {
