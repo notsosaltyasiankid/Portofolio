@@ -23,7 +23,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
-  box-shadow: 3px 3px 5px rgba( 0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px rgba( 0, 0, 0, 0.1); 
 }
 
 .welcomeText{
@@ -42,6 +42,12 @@ header {
   width: 150px;
   height: 150px;
   border-radius: 50%; 
+}
+
+li{
+  list-style:none;
+  display: flex;  
+  text-align: center;
 }
 
 .git-image{
@@ -74,6 +80,63 @@ header {
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.CV{
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;  
+  border: none;
+  background-color: #857B73; 
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.projects-go{
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;  
+  border: none;
+  background-color: #857B73; 
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-about{
+  position: absolute;
+  right: 20px;
+  top: 105px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;  
+  border: none;
+  background-color: #857B73; 
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.projects-go:hover {
+  text-decoration: underline;
+  color: #33251B;
+}
+
+.CV:hover{
+  text-decoration: underline;
+  color: #33251B;
+}
+
+.button-about:hover{
+  text-decoration: underline;
+  color: #33251B;
 }
 
 .Back:hover{
@@ -152,35 +215,7 @@ header {
   max-width: 100%;
 }
 
-.projects-btn {
-  position: absolute;
-  right: 20px;
-  top: 70px;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;  
-  border: none;
-  background-color: #857B73;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.CV{
-  position: absolute;
-  right: 20px;
-  top: 35px;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;  
-  border: none;
-  background-color: #857B73; 
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.projects-btn:hover {
+.projects-go:hover {
   text-decoration: underline;
   color: #33251B;
 }
@@ -206,7 +241,7 @@ nav{
   right: 0;
 }
 
-/* Sections */
+
 section {
   position: relative;
   padding: 30px;
@@ -241,8 +276,14 @@ section {
   padding-left: 200px;
 }
 
+.about-container{
+  padding: 50px
+}
+
 .Welkom-text {
-  width: 50%;
+  padding: 50px;
+  width: 100%;
+  max-width: 900px;
   color: #fff;
 }
 
@@ -270,7 +311,7 @@ a.textDecrative {
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 420px;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
   background-color: #857B73; 
@@ -400,15 +441,15 @@ footer {
     padding-right: 0;
   }
 
-  /* FIX 1: De secties ombouwen tot flexboxen zodat alles netjes stapelt */
+  
   section {
     margin-left: 10px;
     margin-right: 10px;
     padding: 15px;
     display: flex;
-    flex-direction: column; /* Zet de <h1> en de afbeeldingen onder elkaar */
-    align-items: center; /* Centreert alles netjes */
-    box-sizing: border-box; /* Zorgt dat de padding niet zorgt voor horizontale scroll */
+    flex-direction: column; 
+    align-items: center; 
+    box-sizing: border-box; 
   }
 
   .text-padding {
@@ -425,7 +466,7 @@ footer {
     width: 100%;
   }
 
-  /* FIX 2: Zorg dat 'video' en de rest schaalbaar worden en hun harde pixels negeren */
+  
   video, 
   .GameplayPic, 
   .vpPic, 
@@ -433,9 +474,9 @@ footer {
   .about-image img {
     width: 100%;
     max-width: 100%;
-    height: auto; /* Zorgt dat de aspect ratio klopt */
+    height: auto; 
     display: block;
-    margin-top: 15px; /* Geeft wat ademruimte tussen je <h1> en je afbeelding/video */
+    margin-top: 15px; /
   }
 
   .GameplayPicOther {
