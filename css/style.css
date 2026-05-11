@@ -260,9 +260,6 @@ section {
 }
 
 #about {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-image: url("../img/Introduction.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -277,11 +274,16 @@ section {
 }
 
 .about-container{
-  padding: 50px
+  padding: 50px;
+  
+}
+
+.welkom-title{
+  color: #fff;
 }
 
 .Welkom-text {
-  padding: 50px;
+  display: inline-flex;
   width: 100%;
   max-width: 900px;
   color: #fff;
