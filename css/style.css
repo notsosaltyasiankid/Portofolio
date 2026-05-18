@@ -118,11 +118,6 @@ header {
   border-radius: 5px;
 }
 
-.projects-go:hover {
-  text-decoration: underline;
-  color: #33251B;
-}
-
 .CV:hover{
   text-decoration: underline;
   color: #33251B;
@@ -207,6 +202,39 @@ header {
   width: 680px;
   height: 340px;
   max-width: 100%;
+}
+
+#btn-project{
+  font-weight: 600;
+  background: transparent;
+  color: #33251B;
+  border-radius: 10px;
+  border: 2px solid #33251B;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#btn-project::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
+  background: #33251B;
+  z-index: -1;
+}
+
+#btn-project:hover:before{
+  width: 100%;
+}
+
+#btn-project:hover{
+  color: #857B73;
 }
 
 .projects-go:hover {
@@ -404,6 +432,7 @@ hr {
 }
 
 .MoreProjects{
+  margin-top: 50px;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px; 
@@ -422,6 +451,10 @@ hr {
   padding: 50px;
   width: 850px;
   height: 500px;
+}
+
+.explainP{
+
 }
 
 .skills-container {
